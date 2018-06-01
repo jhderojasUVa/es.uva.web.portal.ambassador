@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Timeline]]></NiceName>
+    <Type><![CDATA[ab-timeline]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/es.uva.web.portal.ambassador/formatters/ab-timeline-formatter.jsp]]></target>
+        <uuid>3076b5ed-a2a1-11e7-ab7c-0050568213af</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[1000]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[contenedor]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>true</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>true</Detail>
+    <Display>true</Display>
+    <NestedContainers>true</NestedContainers>
+    <HeadIncludeCss>
+      <CssLink>
+        <link type="WEAK">
+          <target><![CDATA[/system/modules/es.uva.web.portal.ambassador/resources/bhsc/css/timeline.css]]></target>
+          <uuid>19b2b487-a35c-11e7-be71-0050568213af</uuid>
+        </link>
+      </CssLink>
+    </HeadIncludeCss>
+  </NewFormatter>
+</NewFormatters>

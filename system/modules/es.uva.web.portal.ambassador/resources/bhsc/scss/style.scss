@@ -1,0 +1,21 @@
+@import "footer";
+@import "header";
+
+.row {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.leer_mas {
+  margin-top: 20px;
+    a {
+    border: 1px solid #337ab7;
+    padding: 5px;
+    border-radius: 5px;
+    &:hover {
+      background-color: #337ab7;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

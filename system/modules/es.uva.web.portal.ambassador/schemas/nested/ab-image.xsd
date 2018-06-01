@@ -1,0 +1,33 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/> 
+
+	<xsd:element name="ABNestedImages" type="OpenCmsABNestedImages"/>
+
+	<xsd:complexType name="OpenCmsABNestedImages">
+		<xsd:sequence>
+			<xsd:element name="ABNestedImage" type="OpenCmsABNestedImage" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="OpenCmsABNestedImage">
+		<xsd:sequence>
+			<xsd:element name="Image" type="OpenCmsVfsFile" />
+			<xsd:element name="Title" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="Author" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="Copyright" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="Description" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="Foot" type="OpenCmsString" minOccurs="0" />
+		</xsd:sequence>
+		<xsd:attribute name="language" type="OpenCmsLocale" use="optional"/>
+	</xsd:complexType>
+
+	<xsd:annotation>
+		<xsd:appinfo>
+			<resourcebundle name="org.opencms.apollo.template.schemas.workplace"/>
+			<layouts>
+				<layout element="Image" widget="ImageGalleryWidget" configuration="{useformat:true}" />
+			</layouts>
+		</xsd:appinfo>
+	</xsd:annotation>  
+</xsd:schema>

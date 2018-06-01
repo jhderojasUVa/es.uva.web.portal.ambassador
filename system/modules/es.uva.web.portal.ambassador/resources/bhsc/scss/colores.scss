@@ -1,0 +1,81 @@
+// Colores
+// Modo: color_base_alpha
+// Donde base es el primer numero, el valor del rojo
+
+$blanco: rgb(255, 255, 255);
+$negro: rgb(0, 0, 0);
+
+$gris_223: rgb(223, 226, 229);
+$gris_242: rgb(242, 242, 242);
+$gris_247: rgb(247, 247, 247);
+$gris_238: rgb(238, 238, 238);
+
+$negro_50: rgb(50, 60, 70);
+$negro_50_25: rgba(50, 60, 70, 0.25);
+$negro_55: rgb(55, 55, 55);
+$negro_55_25: rgba(55, 55, 55, 0.25);
+$negro_55_50: rgba(55, 55, 55, 0.5);
+
+$azul_0: rgb(0, 175,245);
+$azul_0_: rgb(0, 70, 150);
+
+$rojo_240: rgb(240, 75, 80);
+$rojo_uva: #e5134b;
+
+$naranja_250: rgb(250, 150, 0);
+
+// Colores fuentes
+$gris_puro: rgba(55, 55, 55, 1);
+$gris_h1: rgba(55, 55, 55, 0.9);
+$gris_h2: rgba(55, 55, 55, 0.8);
+$gris: #f7f7f7;
+
+$rojo_destacado: rgba(227,5,74,0.75);
+
+// Marrones y extraños
+/* Colores */
+$azul_oscuro: #004993;
+$rojo_oscuro: #ee5c5c;
+
+$rojo_claro: #ff5722;
+$rojo_uva_oficial: #ef2862;
+
+$verde_oscuro: #567a75;
+$verde: #4db6ac;
+
+$azul_claro: #03a9f4;
+$azul_uva_oficial: #00bdd4;
+$azul_pildora: #d0fdff;
+$azul_pildora2: #33a7e3;
+
+$azul_letras_tab: #32394d;
+
+$gris: #f7f7f7;
+$gris2: #959698;
+$gris3: #dfe2e5;
+$gris4: #73716c;
+$gris_separador: #ecf1f5;
+
+$blanco: white;
+$negro: black;
+
+$marron: #e7e3d8;
+$marron_oscuro: #73716c;
+
+$naranja: #ff9800;
+$naranja_claro: #ff7043;
+
+// Tamaños de cosas
+$enano: 5px;
+$pequeño: 10px;
+$mediano: 15px;
+$grande: 20px;
+
+// Fondos
+.fondo_marron {
+  background-color: $marron;
+}
+
+.fondo_gris {
+  background-color: $gris4;
+}

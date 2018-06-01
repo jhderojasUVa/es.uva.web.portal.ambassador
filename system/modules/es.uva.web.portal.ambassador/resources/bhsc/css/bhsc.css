@@ -1,0 +1,1296 @@
+/* Colores */
+@import url("https://fonts.googleapis.com/css?family=Alegreya:300,400,500|Arvo:300,400,500|IM+Fell+English+SC:300,400,500|Lato:300,400,500|Libre+Franklin:300,400,500|Montserrat:300,400,500|Open+Sans:300,400,500|Raleway:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Alegreya:300,400,500|Arvo:300,400,500|IM+Fell+English+SC:300,400,500|Lato:300,400,500|Libre+Franklin:300,400,500|Montserrat:300,400,500|Open+Sans:300,400,500|Raleway:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Alegreya:300,400,500|Arvo:300,400,500|IM+Fell+English+SC:300,400,500|Lato:300,400,500|Libre+Franklin:300,400,500|Montserrat:300,400,500|Open+Sans:300,400,500|Raleway:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Alegreya:300,400,500|Arvo:300,400,500|IM+Fell+English+SC:300,400,500|Lato:300,400,500|Libre+Franklin:300,400,500|Montserrat:300,400,500|Open+Sans:300,400,500|Raleway:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Alegreya:300,400,500|Arvo:300,400,500|IM+Fell+English+SC:300,400,500|Lato:300,400,500|Libre+Franklin:300,400,500|Montserrat:300,400,500|Open+Sans:300,400,500|Raleway:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Alegreya:300,400,500|Arvo:300,400,500|IM+Fell+English+SC:300,400,500|Lato:300,400,500|Libre+Franklin:300,400,500|Montserrat:300,400,500|Open+Sans:300,400,500|Raleway:300,400,500");
+.fondo_marron {
+  background-color: #e7e3d8;
+}
+
+.fondo_gris {
+  background-color: #73716c;
+}
+
+/* Fuentes */
+/* Colores */
+.fondo_marron {
+  background-color: #e7e3d8;
+}
+
+.fondo_gris {
+  background-color: #73716c;
+}
+
+h1 {
+  font-family: "Libre Franklin", sans-serif;
+  color: rgba(55, 55, 55, 0.9);
+  font-weight: 300;
+  font-size: 2.8em;
+  line-height: 1.0em;
+  margin-bottom: .1em;
+  margin-top: .1em;
+}
+
+h1.titulos_cortos {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Libre Franklin", sans-serif;
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 300;
+  font-size: 2.5em;
+  line-height: 1.0em;
+  margin-top: .2em;
+  margin-bottom: .0em;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 400;
+  font-size: .8em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h5 {
+  /* Default es opensans */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgba(55, 55, 55, 0.8);
+  font-size: .65em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h5.arvo {
+  font-family: "Arvo", serif;
+}
+
+h5.opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+p, li {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  color: rgba(55, 55, 55, 0.8);
+}
+
+p.piefoto, li.piefoto {
+  font-family: "Open Sans", sans-serif;
+  font-size: .65em;
+  font-weight: 400;
+  color: #373737;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+blockquote {
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  line-height: 1.0;
+  color: rgba(227, 5, 74, 0.75);
+}
+
+.script {
+  font-family: "IM Fell English", serif;
+}
+
+/* Modificaciones de las fuentes para Moviles */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-family: "Libre Franklin", sans-serif;
+    color: rgba(55, 55, 55, 0.9);
+    font-weight: 300;
+    font-size: 1.8em;
+    line-height: 1.0em;
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+  }
+  h2 {
+    font-family: "Libre Franklin", sans-serif;
+    color: rgba(55, 55, 55, 0.8);
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.0em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  h3 {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-top: .9em;
+    margin-bottom: .5em;
+  }
+  h4 {
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  h5 {
+    font-size: .8em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  h6 {
+    font-size: .65em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  p, li {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.2em;
+    margin-top: .6em;
+    margin-bottom: 1.5em;
+  }
+  .footer p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    color: rgba(55, 55, 55, 0.8);
+  }
+  blockquote {
+    font-size: 2em;
+    line-height: 1.0;
+  }
+}
+
+/* Fuentes */
+/* Colores */
+.fondo_marron {
+  background-color: #e7e3d8;
+}
+
+.fondo_gris {
+  background-color: #73716c;
+}
+
+h1 {
+  font-family: "Libre Franklin", sans-serif;
+  color: rgba(55, 55, 55, 0.9);
+  font-weight: 300;
+  font-size: 2.8em;
+  line-height: 1.0em;
+  margin-bottom: .1em;
+  margin-top: .1em;
+}
+
+h1.titulos_cortos {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Libre Franklin", sans-serif;
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 300;
+  font-size: 2.5em;
+  line-height: 1.0em;
+  margin-top: .2em;
+  margin-bottom: .0em;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 400;
+  font-size: .8em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h5 {
+  /* Default es opensans */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgba(55, 55, 55, 0.8);
+  font-size: .65em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h5.arvo {
+  font-family: "Arvo", serif;
+}
+
+h5.opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+p, li {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  color: rgba(55, 55, 55, 0.8);
+}
+
+p.piefoto, li.piefoto {
+  font-family: "Open Sans", sans-serif;
+  font-size: .65em;
+  font-weight: 400;
+  color: #373737;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+blockquote {
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  line-height: 1.0;
+  color: rgba(227, 5, 74, 0.75);
+}
+
+.script {
+  font-family: "IM Fell English", serif;
+}
+
+/* Modificaciones de las fuentes para Moviles */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-family: "Libre Franklin", sans-serif;
+    color: rgba(55, 55, 55, 0.9);
+    font-weight: 300;
+    font-size: 1.8em;
+    line-height: 1.0em;
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+  }
+  h2 {
+    font-family: "Libre Franklin", sans-serif;
+    color: rgba(55, 55, 55, 0.8);
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.0em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  h3 {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-top: .9em;
+    margin-bottom: .5em;
+  }
+  h4 {
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  h5 {
+    font-size: .8em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  h6 {
+    font-size: .65em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  p, li {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.2em;
+    margin-top: .6em;
+    margin-bottom: 1.5em;
+  }
+  .footer p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    color: rgba(55, 55, 55, 0.8);
+  }
+  blockquote {
+    font-size: 2em;
+    line-height: 1.0;
+  }
+}
+
+/* Estilos de la base */
+.caja_base {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Colores */
+.fondo_marron {
+  background-color: #e7e3d8;
+}
+
+.fondo_gris {
+  background-color: #73716c;
+}
+
+/* Fuentes */
+/* Colores */
+.fondo_marron {
+  background-color: #e7e3d8;
+}
+
+.fondo_gris {
+  background-color: #73716c;
+}
+
+h1 {
+  font-family: "Libre Franklin", sans-serif;
+  color: rgba(55, 55, 55, 0.9);
+  font-weight: 300;
+  font-size: 2.8em;
+  line-height: 1.0em;
+  margin-bottom: .1em;
+  margin-top: .1em;
+}
+
+h1.titulos_cortos {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Libre Franklin", sans-serif;
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 300;
+  font-size: 2.5em;
+  line-height: 1.0em;
+  margin-top: .2em;
+  margin-bottom: .0em;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 400;
+  font-size: .8em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h5 {
+  /* Default es opensans */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgba(55, 55, 55, 0.8);
+  font-size: .65em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h5.arvo {
+  font-family: "Arvo", serif;
+}
+
+h5.opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+p, li {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  color: rgba(55, 55, 55, 0.8);
+}
+
+p.piefoto, li.piefoto {
+  font-family: "Open Sans", sans-serif;
+  font-size: .65em;
+  font-weight: 400;
+  color: #373737;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+blockquote {
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  line-height: 1.0;
+  color: rgba(227, 5, 74, 0.75);
+}
+
+.script {
+  font-family: "IM Fell English", serif;
+}
+
+/* Modificaciones de las fuentes para Moviles */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-family: "Libre Franklin", sans-serif;
+    color: rgba(55, 55, 55, 0.9);
+    font-weight: 300;
+    font-size: 1.8em;
+    line-height: 1.0em;
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+  }
+  h2 {
+    font-family: "Libre Franklin", sans-serif;
+    color: rgba(55, 55, 55, 0.8);
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.0em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  h3 {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-top: .9em;
+    margin-bottom: .5em;
+  }
+  h4 {
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  h5 {
+    font-size: .8em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  h6 {
+    font-size: .65em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  p, li {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.2em;
+    margin-top: .6em;
+    margin-bottom: 1.5em;
+  }
+  .footer p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    color: rgba(55, 55, 55, 0.8);
+  }
+  blockquote {
+    font-size: 2em;
+    line-height: 1.0;
+  }
+}
+
+.footer h1 {
+  color: #03a9f4;
+  margin-bottom: 5px;
+  padding: 0;
+  font-size: 2.7em;
+}
+
+.footer h1.lema:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.footer h1.lema {
+  margin-bottom: 0;
+  margin-top: 2em;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2.2em;
+  color: #00bdd4;
+}
+
+.footer h1.sublema {
+  margin: 0;
+  color: #ef2862;
+}
+
+.footer h2 {
+  color: #ef2862;
+  font: 28px Arial;
+}
+
+.footer h3 {
+  color: #ef2862;
+  font: bold 3em Arial;
+  margin: 0;
+  padding: 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.aviso_legal h2 {
+  color: white;
+  font: bold 1.2em Arial;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.aviso_legal p {
+  color: white;
+  font-size: 0.8em;
+}
+
+/* Fuentes */
+/* Colores */
+.fondo_marron {
+  background-color: #e7e3d8;
+}
+
+.fondo_gris {
+  background-color: #73716c;
+}
+
+h1 {
+  font-family: "Libre Franklin", sans-serif;
+  color: rgba(55, 55, 55, 0.9);
+  font-weight: 300;
+  font-size: 2.8em;
+  line-height: 1.0em;
+  margin-bottom: .1em;
+  margin-top: .1em;
+}
+
+h1.titulos_cortos {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Libre Franklin", sans-serif;
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 300;
+  font-size: 2.5em;
+  line-height: 1.0em;
+  margin-top: .2em;
+  margin-bottom: .0em;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 400;
+  font-size: .8em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h5 {
+  /* Default es opensans */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgba(55, 55, 55, 0.8);
+  font-size: .65em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h5.arvo {
+  font-family: "Arvo", serif;
+}
+
+h5.opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+p, li {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  color: rgba(55, 55, 55, 0.8);
+}
+
+p.piefoto, li.piefoto {
+  font-family: "Open Sans", sans-serif;
+  font-size: .65em;
+  font-weight: 400;
+  color: #373737;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+blockquote {
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  line-height: 1.0;
+  color: rgba(227, 5, 74, 0.75);
+}
+
+.script {
+  font-family: "IM Fell English", serif;
+}
+
+/* Modificaciones de las fuentes para Moviles */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-family: "Libre Franklin", sans-serif;
+    color: rgba(55, 55, 55, 0.9);
+    font-weight: 300;
+    font-size: 1.8em;
+    line-height: 1.0em;
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+  }
+  h2 {
+    font-family: "Libre Franklin", sans-serif;
+    color: rgba(55, 55, 55, 0.8);
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.0em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  h3 {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-top: .9em;
+    margin-bottom: .5em;
+  }
+  h4 {
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  h5 {
+    font-size: .8em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  h6 {
+    font-size: .65em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  p, li {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.2em;
+    margin-top: .6em;
+    margin-bottom: 1.5em;
+  }
+  .footer p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    color: rgba(55, 55, 55, 0.8);
+  }
+  blockquote {
+    font-size: 2em;
+    line-height: 1.0;
+  }
+}
+
+/* Cabecera */
+.header .migas {
+  text-shadow: 0 0 1px black;
+}
+
+.header .migas p {
+  color: white;
+  font-size: 1.4em;
+}
+
+.header .flecha a {
+  font-size: 4em;
+  padding: 10px;
+  color: #00aff5;
+  text-shadow: 0 0 2px black;
+}
+
+.header .flecha a:hover {
+  color: white;
+}
+
+.header .flecha .icono-flecha {
+  animation-duration: 2.3s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+
+.bottom-align-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.row {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.leer_mas {
+  margin-top: 20px;
+}
+
+.leer_mas a {
+  border: 1px solid #337ab7;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.leer_mas a:hover {
+  background-color: #337ab7;
+  color: white;
+  text-decoration: none;
+}
+
+/* Fuentes */
+/* Colores */
+.fondo_marron {
+  background-color: #e7e3d8;
+}
+
+.fondo_gris {
+  background-color: #73716c;
+}
+
+h1 {
+  font-family: "Libre Franklin", sans-serif;
+  color: rgba(55, 55, 55, 0.9);
+  font-weight: 300;
+  font-size: 2.8em;
+  line-height: 1.0em;
+  margin-bottom: .1em;
+  margin-top: .1em;
+}
+
+h1.titulos_cortos {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Libre Franklin", sans-serif;
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 300;
+  font-size: 2.5em;
+  line-height: 1.0em;
+  margin-top: .2em;
+  margin-bottom: .0em;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 400;
+  font-size: .8em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h5 {
+  /* Default es opensans */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgba(55, 55, 55, 0.8);
+  font-size: .65em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h5.arvo {
+  font-family: "Arvo", serif;
+}
+
+h5.opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+p, li {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  color: rgba(55, 55, 55, 0.8);
+}
+
+p.piefoto, li.piefoto {
+  font-family: "Open Sans", sans-serif;
+  font-size: .65em;
+  font-weight: 400;
+  color: #373737;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+blockquote {
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  line-height: 1.0;
+  color: rgba(227, 5, 74, 0.75);
+}
+
+.script {
+  font-family: "IM Fell English", serif;
+}
+
+/* Modificaciones de las fuentes para Moviles */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-family: "Libre Franklin", sans-serif;
+    color: rgba(55, 55, 55, 0.9);
+    font-weight: 300;
+    font-size: 1.8em;
+    line-height: 1.0em;
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+  }
+  h2 {
+    font-family: "Libre Franklin", sans-serif;
+    color: rgba(55, 55, 55, 0.8);
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.0em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  h3 {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-top: .9em;
+    margin-bottom: .5em;
+  }
+  h4 {
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  h5 {
+    font-size: .8em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  h6 {
+    font-size: .65em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  p, li {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.2em;
+    margin-top: .6em;
+    margin-bottom: 1.5em;
+  }
+  .footer p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    color: rgba(55, 55, 55, 0.8);
+  }
+  blockquote {
+    font-size: 2em;
+    line-height: 1.0;
+  }
+}
+
+/* Cabecera */
+.header .migas {
+  text-shadow: 0 0 1px black;
+}
+
+.header .migas p {
+  color: white;
+  font-size: 1.4em;
+}
+
+.header .flecha a {
+  font-size: 4em;
+  padding: 10px;
+  color: #00aff5;
+  text-shadow: 0 0 2px black;
+}
+
+.header .flecha a:hover {
+  color: white;
+}
+
+.header .flecha .icono-flecha {
+  animation-duration: 2.3s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+
+.bottom-align-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.breadcrumb {
+  background: none;
+  color: white;
+}
+
+.breadcrumb li {
+  float: left;
+  /*padding-right: 5px;
+    padding-left: 5px;*/
+  color: white;
+}
+
+.breadcrumb li a {
+  color: white;
+}
+
+.breadcrumb > li + li:before {
+  padding: 0;
+}
+
+.breadcrumb > li + li.start:before {
+  content: '';
+  padding: 0;
+}
+
+/* Colores */
+.fondo_marron {
+  background-color: #e7e3d8;
+}
+
+.fondo_gris {
+  background-color: #73716c;
+}
+
+/* Fuentes */
+/* Colores */
+.fondo_marron {
+  background-color: #e7e3d8;
+}
+
+.fondo_gris {
+  background-color: #73716c;
+}
+
+h1 {
+  font-family: "Libre Franklin", sans-serif;
+  color: rgba(55, 55, 55, 0.9);
+  font-weight: 300;
+  font-size: 2.8em;
+  line-height: 1.0em;
+  margin-bottom: .1em;
+  margin-top: .1em;
+}
+
+h1.titulos_cortos {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Libre Franklin", sans-serif;
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 300;
+  font-size: 2.5em;
+  line-height: 1.0em;
+  margin-top: .2em;
+  margin-bottom: .0em;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 400;
+  font-size: .8em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h5 {
+  /* Default es opensans */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgba(55, 55, 55, 0.8);
+  font-size: .65em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h5.arvo {
+  font-family: "Arvo", serif;
+}
+
+h5.opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+p, li {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  color: rgba(55, 55, 55, 0.8);
+}
+
+p.piefoto, li.piefoto {
+  font-family: "Open Sans", sans-serif;
+  font-size: .65em;
+  font-weight: 400;
+  color: #373737;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+blockquote {
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  line-height: 1.0;
+  color: rgba(227, 5, 74, 0.75);
+}
+
+.script {
+  font-family: "IM Fell English", serif;
+}
+
+/* Modificaciones de las fuentes para Moviles */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-family: "Libre Franklin", sans-serif;
+    color: rgba(55, 55, 55, 0.9);
+    font-weight: 300;
+    font-size: 1.8em;
+    line-height: 1.0em;
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+  }
+  h2 {
+    font-family: "Libre Franklin", sans-serif;
+    color: rgba(55, 55, 55, 0.8);
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.0em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  h3 {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-top: .9em;
+    margin-bottom: .5em;
+  }
+  h4 {
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  h5 {
+    font-size: .8em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  h6 {
+    font-size: .65em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  p, li {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.2em;
+    margin-top: .6em;
+    margin-bottom: 1.5em;
+  }
+  .footer p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    color: rgba(55, 55, 55, 0.8);
+  }
+  blockquote {
+    font-size: 2em;
+    line-height: 1.0;
+  }
+}
+
+.footer h1 {
+  color: #03a9f4;
+  margin-bottom: 5px;
+  padding: 0;
+  font-size: 2.7em;
+}
+
+.footer h1.lema:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.footer h1.lema {
+  margin-bottom: 0;
+  margin-top: 2em;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2.2em;
+  color: #00bdd4;
+}
+
+.footer h1.sublema {
+  margin: 0;
+  color: #ef2862;
+}
+
+.footer h2 {
+  color: #ef2862;
+  font: 28px Arial;
+}
+
+.footer h3 {
+  color: #ef2862;
+  font: bold 3em Arial;
+  margin: 0;
+  padding: 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.aviso_legal h2 {
+  color: white;
+  font: bold 1.2em Arial;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.aviso_legal p {
+  color: white;
+  font-size: 0.8em;
+}

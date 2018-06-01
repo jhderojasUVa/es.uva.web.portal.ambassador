@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Sample formatter for AB-Flexible]]></NiceName>
+    <Type><![CDATA[ab-flexible]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/es.uva.web.portal.ambassador/formatters/ab-flexible-formatter.jsp]]></target>
+        <uuid>e333e75c-a28c-11e7-8c4a-0050568213af</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[1000]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[contenedor]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>true</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>true</Detail>
+    <NestedContainers>false</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[hideTitle]]></PropertyName>
+      <DisplayName><![CDATA[Esconder titulo]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>

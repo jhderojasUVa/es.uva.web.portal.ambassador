@@ -1,0 +1,193 @@
+/* Fuentes */
+
+// Importaciones
+@import url('https://fonts.googleapis.com/css?family=Alegreya:300,400,500|Arvo:300,400,500|IM+Fell+English+SC:300,400,500|Lato:300,400,500|Libre+Franklin:300,400,500|Montserrat:300,400,500|Open+Sans:300,400,500|Raleway:300,400,500');
+@import "colores";
+
+// Definicion de Fuentes
+$arial: Arial;
+$montserrat: 'Montserrat', sans-serif;
+$librefranklin: 'Libre Franklin', sans-serif;
+$lato: 'Lato', sans-serif;
+$opensans: 'Open Sans', sans-serif;
+$raleway: 'Raleway', sans-serif;
+$alegreya: 'Alegreya', serif;
+$arvo: 'Arvo', serif;
+$scriptfont: 'IM Fell English', serif;
+
+// Definicion de bold
+$peso300: 300;
+$peso400: 400;
+$peso500: 500;
+$peso600: 600;
+$peso700: 700;
+
+// Definicion de h1, h2, h3, h4, h5
+h1 {
+  font-family: $librefranklin;
+  color: $gris_h1;
+  font-weight: $peso300;
+  font-size: 2.8em;
+	line-height: 1.0em;
+	margin-bottom: .1em;
+	margin-top: .1em;
+  &.titulos_cortos {
+    font-family: $montserrat;
+    font-weight: $peso400;
+  }
+}
+
+h2 {
+  font-family: $librefranklin;
+  color: $gris_h2;
+  font-weight: $peso300;
+  font-size: 2.5em;
+	line-height: 1.0em;
+  margin-top: .2em;
+  margin-bottom: .0em;
+}
+
+h3 {
+  font-family: $opensans;
+  color: $gris_h2;
+  font-weight: $peso300;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h4 {
+  font-family: $opensans;
+  color: $gris_h2;
+  font-weight: $peso400;
+  font-size: .8em;
+	line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h5 {
+  /* Default es opensans */
+  font-family: $opensans;
+  font-weight: $peso400;
+  color: $gris_h2;
+  font-size: .65em;
+	line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  &.arvo {
+    font-family: $arvo;
+  }
+  &.opensans {
+    font-family: $opensans;
+  }
+}
+
+// Comun
+p, li {
+  font-family: $lato;
+  font-weight: $peso300;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  color: $gris_h2;
+  &.piefoto {
+    font-family: $opensans;
+    font-size: .65em;
+    font-weight: $peso400;
+    color: $gris_puro;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+}
+
+// Destacados
+blockquote {
+  font-family: $raleway;
+  font-size: 2em;
+  line-height: 1.0;
+  color: $rojo_destacado;
+}
+
+// Estilos de fuente extras
+.script {
+  font-family: $scriptfont;
+}
+
+/* Modificaciones de las fuentes para Moviles */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-family: $librefranklin;
+    color: $gris_h1;
+    font-weight: $peso300;
+    font-size: 1.8em;
+    line-height: 1.0em;
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+  }
+
+  h2 {
+    font-family: $librefranklin;
+    color: $gris_h2;
+    font-weight: $peso300;
+    font-size: 1.6em;
+    line-height: 1.0em;
+    margin-top: .5em;
+    margin-bottom:.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+	  line-height: 1.4em;
+    margin-top: .9em;
+    margin-bottom: .5em;
+  }
+
+  h4 {
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+
+  h5 {
+    font-size: .8em;
+	  line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+
+  h6 {
+    font-size: .65em;
+	  line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+
+  p, li {
+    font-family: $lato;
+    font-weight: $peso300;
+    font-size: 1.6em;
+	  line-height: 1.2em;
+    margin-top: .6em;
+    margin-bottom: 1.5em;
+  }
+
+  .footer p {
+    font-family: $lato;
+    font-weight: $peso300;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    color: $gris_h2;
+  }
+
+  blockquote {
+    font-size: 2em;
+    line-height: 1.0;
+  }
+}

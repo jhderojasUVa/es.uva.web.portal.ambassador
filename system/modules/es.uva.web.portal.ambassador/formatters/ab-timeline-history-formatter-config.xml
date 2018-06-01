@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Timeline History]]></NiceName>
+    <Type><![CDATA[ab-timeline]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/es.uva.web.portal.ambassador/formatters/ab-timeline-history-formatter.jsp]]></target>
+        <uuid>e641a00c-a432-11e7-9ad2-0050568213af</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[900]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[contenedor]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>true</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>true</Detail>
+    <Display>true</Display>
+    <NestedContainers>true</NestedContainers>
+    <HeadIncludeCss>
+      <CssLink>
+        <link type="WEAK">
+          <target><![CDATA[/system/modules/es.uva.web.portal.ambassador/resources/bhsc/css/timeline-history.cs]]></target>
+          <uuid>804f08ab-a433-11e7-9ad2-0050568213af</uuid>
+        </link>
+      </CssLink>
+    </HeadIncludeCss>
+    <HeadIncludeJs>
+      <JavascriptLink>
+        <link type="WEAK">
+          <target><![CDATA[/system/modules/es.uva.web.portal.ambassador/resources/bhsc/js/timeline-history.js]]></target>
+          <uuid>805d608e-a433-11e7-9ad2-0050568213af</uuid>
+        </link>
+      </JavascriptLink>
+    </HeadIncludeJs>
+  </NewFormatter>
+</NewFormatters>

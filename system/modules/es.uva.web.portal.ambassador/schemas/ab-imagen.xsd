@@ -1,0 +1,44 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+	
+	<xsd:include schemaLocation="opencms://system/modules/es.uva.web.portal.ambassador/schemas/nested/ab-imagenitem.xsd"/>
+
+	<xsd:element name="AB-Imagens" type="OpenCmsAB-Imagens"/>
+
+	<xsd:complexType name="OpenCmsAB-Imagens">
+		<xsd:sequence>
+			<xsd:element name="AB-Imagen" type="OpenCmsAB-Imagen" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="OpenCmsAB-Imagen">
+		<xsd:sequence>
+			<xsd:element name="Title" type="OpenCmsString" />
+			<xsd:element name="Item" type="OpenCmsABImageItem" minOccurs="1" maxOccurs="6" />
+		</xsd:sequence>
+		<xsd:attribute name="language" type="OpenCmsLocale" use="required"/>
+	</xsd:complexType>
+
+	<xsd:annotation>
+		<xsd:appinfo>
+			<resourcebundle name="es.uva.web.portal.ambassador.imagen"/>
+			<mappings>
+				<mapping element="Title" mapto="property:Title" />
+				<mapping element="Title" mapto="urlName" />
+			</mappings>
+			<defaults>
+				<default element="Title" value="%(key.imagen.default.Title)" />
+				<default element="Item/Text" value="%(key.imagen.default.Text)" />
+			</defaults>
+			<layouts>
+			</layouts>
+			<validationrules/>
+			<relations>
+				<relation element="Item/Image" invalidate="node" />
+			</relations>
+			<searchsettings containerPageOnly="true"/>
+		</xsd:appinfo>
+	</xsd:annotation>
+
+</xsd:schema>

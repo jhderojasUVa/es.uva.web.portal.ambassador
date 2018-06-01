@@ -1,0 +1,3003 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<export>
+	<info>
+		<creator>e09338789f</creator>
+		<opencms_version>10.5.3</opencms_version>
+		<createdate>Fri, 01 Jun 2018 07:48:22 GMT</createdate>
+		<infoproject>Offline</infoproject>
+		<export_version>10</export_version>
+	</info>
+	<module>
+		<name>es.uva.web.portal.ambassador</name>
+		<nicename/>
+		<class/>
+		<export-mode name="default"/>
+		<description/>
+		<version>0.1</version>
+		<authorname><![CDATA[Grupo Web de la Universidad de Valladolid]]></authorname>
+		<authoremail><![CDATA[soporte-web@uva.es]]></authoremail>
+		<datecreated/>
+		<userinstalled/>
+		<dateinstalled/>
+		<dependencies/>
+		<exportpoints>
+			<exportpoint uri="/system/modules/es.uva.web.portal.ambassador/classes/" destination="WEB-INF/classes/"/>
+			<exportpoint uri="/system/modules/es.uva.web.portal.ambassador/lib/" destination="WEB-INF/lib/"/>
+			<exportpoint uri="/system/modules/es.uva.web.portal.ambassador/resources/" destination="resources/"/>
+		</exportpoints>
+		<resources>
+			<resource uri="/system/modules/es.uva.web.portal.ambassador/"/>
+			<resource uri="/system/workplace/resources/filetypes/ab-box-standard.png"/>
+			<resource uri="/system/workplace/resources/filetypes/ab-box-standard_big.png"/>
+			<resource uri="/system/workplace/resources/filetypes/ab-navigation.png"/>
+			<resource uri="/system/workplace/resources/filetypes/ab-navigation_big.png"/>
+			<resource uri="/system/workplace/resources/filetypes/ab-flexible.png"/>
+			<resource uri="/system/workplace/resources/filetypes/ab-flexible_big.png"/>
+			<resource uri="/system/workplace/resources/filetypes/ab-parrafo.png"/>
+			<resource uri="/system/workplace/resources/filetypes/ab-parrafo_big.png"/>
+			<resource uri="/system/workplace/resources/filetypes/ab-imagen.png"/>
+			<resource uri="/system/workplace/resources/filetypes/ab-imagen_big.png"/>
+			<resource uri="/system/workplace/resources/filetypes/ab-mapa.png"/>
+			<resource uri="/system/workplace/resources/filetypes/ab-mapa_big.png"/>
+			<resource uri="/system/workplace/resources/filetypes/ab-timeline.png"/>
+			<resource uri="/system/workplace/resources/filetypes/ab-timeline_big.png"/>
+		</resources>
+		<excluderesources/>
+		<parameters/>
+		<resourcetypes>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="ab-box-standard" id="2200">
+				<param name="schema">/system/modules/es.uva.web.portal.ambassador/schemas/ab-box-standard.xsd</param>
+			</type>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="ab-navigation" id="2201">
+				<param name="schema">/system/modules/es.uva.web.portal.ambassador/schemas/ab-navigation.xsd</param>
+			</type>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="ab-flexible" id="2202">
+				<param name="schema">/system/modules/es.uva.web.portal.ambassador/schemas/ab-flexible.xsd</param>
+			</type>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="ab-parrafo" id="2203">
+				<param name="schema">/system/modules/es.uva.web.portal.ambassador/schemas/ab-parrafo.xsd</param>
+			</type>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="ab-imagen" id="2204">
+				<param name="schema">/system/modules/es.uva.web.portal.ambassador/schemas/ab-imagen.xsd</param>
+			</type>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="ab-mapa" id="2205">
+				<param name="schema">/system/modules/es.uva.web.portal.ambassador/schemas/ab-mapa.xsd</param>
+			</type>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="ab-timeline" id="2206">
+				<param name="schema">/system/modules/es.uva.web.portal.ambassador/schemas/ab-timeline.xsd</param>
+			</type>
+		</resourcetypes>
+		<explorertypes>
+			<explorertype name="ab-box-standard" key="fileicon.ab-box-standard" icon="ab-box-standard.png" bigicon="ab-box-standard_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=ab-box-standard" order="10" autosetnavigation="false" autosettitle="false" info="desc.ab-box-standard" key="title.ab-box-standard"/>
+			</explorertype>
+			<explorertype name="ab-navigation" key="fileicon.ab-navigation" icon="ab-navigation.png" bigicon="ab-navigation_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=ab-navigation" order="10" autosetnavigation="false" autosettitle="false" info="desc.ab-navigation" key="title.ab-navigation"/>
+			</explorertype>
+			<explorertype name="ab-flexible" key="fileicon.ab-flexible" icon="ab-flexible.png" bigicon="ab-flexible_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=ab-flexible" order="10" autosetnavigation="false" autosettitle="false" info="desc.ab-flexible" key="title.ab-flexible"/>
+			</explorertype>
+			<explorertype name="ab-parrafo" key="fileicon.ab-parrafo" icon="ab-parrafo.png" bigicon="ab-parrafo_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=ab-parrafo" order="10" autosetnavigation="false" autosettitle="false" info="desc.ab-parrafo" key="title.ab-parrafo"/>
+			</explorertype>
+			<explorertype name="ab-imagen" key="fileicon.ab-imagen" icon="ab-imagen.png" bigicon="ab-imagen_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=ab-imagen" order="10" autosetnavigation="false" autosettitle="false" info="desc.ab-imagen" key="title.ab-imagen"/>
+			</explorertype>
+			<explorertype name="ab-mapa" key="fileicon.ab-mapa" icon="ab-mapa.png" bigicon="ab-mapa_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=ab-mapa" order="10" autosetnavigation="false" autosettitle="false" info="desc.ab-mapa" key="title.ab-mapa"/>
+			</explorertype>
+			<explorertype name="ab-timeline" key="fileicon.ab-timeline" icon="ab-timeline.png" bigicon="ab-timeline_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=ab-timeline" order="10" autosetnavigation="false" autosettitle="false" key="title.ab-timeline"/>
+			</explorertype>
+		</explorertypes>
+	</module>
+	<files>
+		<file>
+			<destination>system</destination>
+			<type>folder</type>
+			<uuidstructure>1de80c57-f75b-11e6-abfe-0050568213af</uuidstructure>
+			<datelastmodified>Mon, 20 Feb 2017 10:55:39 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 20 Feb 2017 10:55:39 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol>
+				<accessentry>
+					<uuidprincipal>ROLE.WORKPLACE_USER</uuidprincipal>
+					<flags>514</flags>
+					<permissionset>
+						<allowed>1</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+			</accesscontrol>
+		</file>
+		<file>
+			<destination>system/modules</destination>
+			<type>folder</type>
+			<uuidstructure>1f9630c3-f75b-11e6-abfe-0050568213af</uuidstructure>
+			<datelastmodified>Mon, 20 Feb 2017 10:55:42 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 20 Feb 2017 10:55:42 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol>
+				<accessentry>
+					<uuidprincipal>ROLE.WORKPLACE_USER</uuidprincipal>
+					<flags>514</flags>
+					<permissionset>
+						<allowed>5</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+			</accesscontrol>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador</destination>
+			<type>folder</type>
+			<uuidstructure>73861e91-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 07:29:37 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:29:37 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/.config</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/.config</destination>
+			<type>module_config</type>
+			<uuidstructure>8935e0c4-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>8935e0c5-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Wed, 27 Sep 2017 08:54:22 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:30:13 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/classes</destination>
+			<type>folder</type>
+			<uuidstructure>73be1e8d-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 07:29:37 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:29:37 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/classes/es</destination>
+			<type>folder</type>
+			<uuidstructure>73c7464f-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 07:29:37 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:29:37 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/classes/es/uva</destination>
+			<type>folder</type>
+			<uuidstructure>73d06e11-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 07:29:38 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:29:38 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/classes/es/uva/web</destination>
+			<type>folder</type>
+			<uuidstructure>73da3213-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 07:29:38 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:29:38 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/classes/es/uva/web/portal</destination>
+			<type>folder</type>
+			<uuidstructure>73e3a7f5-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 07:29:38 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:29:38 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/classes/es/uva/web/portal/ambassador</destination>
+			<type>folder</type>
+			<uuidstructure>73eca8a7-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 07:29:38 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:29:38 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/elements</destination>
+			<type>folder</type>
+			<uuidstructure>73997f85-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 07:29:37 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:29:37 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/elements/buscador</destination>
+			<type>folder</type>
+			<uuidstructure>1766730e-a8e0-11e7-9b4d-0050568213af</uuidstructure>
+			<datelastmodified>Wed, 04 Oct 2017 08:43:27 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Wed, 04 Oct 2017 08:43:27 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/elements/buscador/buscador.js</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/elements/buscador/buscador.js</destination>
+			<type>plain</type>
+			<uuidstructure>4c5fdb21-a8ef-11e7-9b4d-0050568213af</uuidstructure>
+			<uuidresource>4c5fdb22-a8ef-11e7-9b4d-0050568213af</uuidresource>
+			<datelastmodified>Thu, 24 May 2018 06:59:13 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Wed, 04 Oct 2017 10:32:19 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[JS del buscador]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/elements/buscador/buscador.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/elements/buscador/buscador.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>eb45919c-a8ed-11e7-9b4d-0050568213af</uuidstructure>
+			<uuidresource>eb45919d-a8ed-11e7-9b4d-0050568213af</uuidresource>
+			<datelastmodified>Wed, 23 May 2018 11:40:48 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Wed, 04 Oct 2017 10:22:26 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Elemento del buscador]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Elemento del buscador]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/elements/buscador/buscador_proxy.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/elements/buscador/buscador_proxy.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>2302b580-a8e0-11e7-9b4d-0050568213af</uuidstructure>
+			<uuidresource>2302b581-a8e0-11e7-9b4d-0050568213af</uuidresource>
+			<datelastmodified>Wed, 04 Oct 2017 11:52:34 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Wed, 04 Oct 2017 08:43:47 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Proxy acceso REST]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/elements/menu</destination>
+			<type>folder</type>
+			<uuidstructure>a1db60fb-a2a2-11e7-ab7c-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 10:08:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 10:08:24 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/elements/menu/horizontal_menu.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/elements/menu/horizontal_menu.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>c4dcd6cb-5cea-11e8-bafc-0050568213af</uuidstructure>
+			<uuidresource>c4dcd6cc-5cea-11e8-bafc-0050568213af</uuidresource>
+			<datelastmodified>Thu, 24 May 2018 12:02:11 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 21 May 2018 11:33:22 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Menu superior en dos trozos porque asi se ha quedado punto com]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Menu superior horizontal]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/elements/menu/nav_breadcrumb.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/elements/menu/nav_breadcrumb.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>a908897d-a2a2-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>a908897e-a2a2-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Thu, 24 May 2018 12:01:47 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 10:08:36 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Breadcrumb o ruta de migas con el ultimo (si no es un index) en gordo]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Breadcrumb]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/elementviews</destination>
+			<type>folder</type>
+			<uuidstructure>ca33d498-b4a4-11e7-9c7a-0050568213af</uuidstructure>
+			<datelastmodified>Thu, 19 Oct 2017 08:09:11 GMT</datelastmodified>
+			<userlastmodified>nulle71124293j</userlastmodified>
+			<datecreated>Thu, 19 Oct 2017 08:09:11 GMT</datecreated>
+			<usercreated>nulle71124293j</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/elementviews/ambassador_elementview</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/elementviews/ambassador_elementview</destination>
+			<type>elementview</type>
+			<uuidstructure>e0af7225-b4a4-11e7-9c7a-0050568213af</uuidstructure>
+			<uuidresource>e0af7226-b4a4-11e7-9c7a-0050568213af</uuidresource>
+			<datelastmodified>Thu, 19 Oct 2017 08:10:18 GMT</datelastmodified>
+			<userlastmodified>nulle71124293j</userlastmodified>
+			<datecreated>Thu, 19 Oct 2017 08:09:49 GMT</datecreated>
+			<usercreated>nulle71124293j</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[BHSC]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[true]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters</destination>
+			<type>folder</type>
+			<uuidstructure>73a2f567-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 07:29:37 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:29:37 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-box-standard-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-box-standard-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>8902c2ce-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>8902c2cf-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 08:18:41 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:30:13 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample formatter for AB-Box-Standard]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-box-standard-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-box-standard-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>88efaffb-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>88efaffc-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Mon, 02 Oct 2017 08:18:19 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:30:13 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-flexible-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-flexible-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>e34832af-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>e34832b0-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 08:18:08 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:32:45 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample formatter for AB-Flexible]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-flexible-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-flexible-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>e333e75c-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>e333e75d-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 08:17:38 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:32:44 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-imagen-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-imagen-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>1fb6c6a7-a28d-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>1fb6c6a8-a28d-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 08:19:40 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:34:26 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample formatter for AB-Imagen]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-imagen-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-imagen-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>1fa1df14-a28d-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>1fa1df15-a28d-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Mon, 02 Oct 2017 11:53:22 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:34:26 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-mapa-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-mapa-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>1ed948b9-a2a1-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>1ed948ba-a2a1-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Fri, 29 Sep 2017 08:21:07 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 09:57:34 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample formatter for AB-Mapa]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-mapa-formatter-copy.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-mapa-formatter-copy.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>0b07a6bb-a4eb-11e7-9b4d-0050568213af</uuidstructure>
+			<uuidresource>0b07a6bc-a4eb-11e7-9b4d-0050568213af</uuidresource>
+			<datelastmodified>Fri, 29 Sep 2017 07:47:39 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Fri, 29 Sep 2017 07:51:46 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-mapa-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-mapa-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>1ec1c916-a2a1-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>1ec1c917-a2a1-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Fri, 29 Sep 2017 08:29:25 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 09:57:34 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-navigation-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-navigation-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>cb8dd383-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>cb8dd384-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 08:20:51 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:32:05 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample formatter for AB-Navigationa]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-navigation-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-navigation-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>cb79d650-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>cb79d651-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 08:20:30 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:32:05 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-parrafo-imginf-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-parrafo-imginf-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>402ab0d3-5cdc-11e8-bafc-0050568213af</uuidstructure>
+			<uuidresource>402ab0d4-5cdc-11e8-bafc-0050568213af</uuidresource>
+			<datelastmodified>Mon, 21 May 2018 10:00:49 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 21 May 2018 09:49:27 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Párrafos con la imagen inferior]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-parrafo-imginf-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-parrafo-imginf-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>50ab3d39-5cdc-11e8-bafc-0050568213af</uuidstructure>
+			<uuidresource>50ab3d3a-5cdc-11e8-bafc-0050568213af</uuidresource>
+			<datelastmodified>Wed, 30 May 2018 08:39:41 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 21 May 2018 09:49:55 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-parrafo-imgleft-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-parrafo-imgleft-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>f48afdbb-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>f48afdbc-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 10:38:43 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:33:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Párrafo con imagen a la izquierda]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-parrafo-imgleft-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-parrafo-imgleft-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>f47775b8-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>f47775b9-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Wed, 23 May 2018 06:30:37 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:33:13 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-parrafo-imgright-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-parrafo-imgright-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>aa4a34ed-a2a6-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>aa4a34ee-a2a6-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 10:39:00 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 10:37:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Párrafos con imagen a la derecha]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-parrafo-imgright-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-parrafo-imgright-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>bfc0485a-a2a6-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>bfc0485b-a2a6-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Wed, 23 May 2018 06:30:44 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 10:37:52 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-parrafo-imgsup-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-parrafo-imgsup-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>ca0b048d-a2a6-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>ca0b048e-a2a6-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 10:39:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 10:38:09 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Párrafos con la imagen superior]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-parrafo-imgsup-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-parrafo-imgsup-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>cc199943-a2a6-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>cc199944-a2a6-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Fri, 01 Jun 2018 07:42:13 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 10:38:13 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-timeline-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-timeline-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>308ab320-a2a1-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>308ab321-a2a1-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 10:49:12 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 09:58:04 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Timeline]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-timeline-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-timeline-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>3076b5ed-a2a1-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>3076b5ee-a2a1-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 10:49:37 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 09:58:04 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-timeline-history-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-timeline-history-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>dade47e6-a432-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>dade47e7-a432-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 09:58:45 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 09:53:18 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Timeline History]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/formatters/ab-timeline-history-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/formatters/ab-timeline-history-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>e641a00c-a432-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>e641a00d-a432-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 11:13:51 GMT</datelastmodified>
+			<userlastmodified>nulle71124293j</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 09:53:37 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/i18n</destination>
+			<type>folder</type>
+			<uuidstructure>88c76776-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 07:30:13 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:30:13 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/i18n/es.uva.web.portal.ambassador.workplace_es</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/i18n/es.uva.web.portal.ambassador.workplace_es</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>88d215d8-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>88d215d9-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Fri, 01 Jun 2018 07:48:05 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:30:13 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/lib</destination>
+			<type>folder</type>
+			<uuidstructure>d12951be-a434-11e7-9ad2-0050568213af</uuidstructure>
+			<datelastmodified>Thu, 28 Sep 2017 10:07:21 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 10:07:21 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/lib/json-taglib-0.4.1.jar</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/lib/json-taglib-0.4.1.jar</destination>
+			<type>binary</type>
+			<uuidstructure>de6e3b21-a434-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>de6e3b22-a434-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 10:15:43 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 10:07:43 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[json-taglib-0.4.1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources</destination>
+			<type>folder</type>
+			<uuidstructure>73b4cfbb-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 07:29:37 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:29:37 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc</destination>
+			<type>folder</type>
+			<uuidstructure>c83246ee-a29e-11e7-ab7c-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 09:40:50 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 09:40:50 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Resources para BHSC]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Resources para BHSC]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/css</destination>
+			<type>folder</type>
+			<uuidstructure>cfd16b24-a29e-11e7-ab7c-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 09:41:03 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 09:41:03 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/css/animate.css</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/css/animate.css</destination>
+			<type>plain</type>
+			<uuidstructure>7cbf8e77-a2ad-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>7cbf8e78-a2ad-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 11:26:06 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 11:26:06 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[animate]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/css/bhsc.css</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/css/bhsc.css</destination>
+			<type>plain</type>
+			<uuidstructure>741c6d9f-a758-11e7-9b4d-0050568213af</uuidstructure>
+			<uuidresource>741c6da0-a758-11e7-9b4d-0050568213af</uuidresource>
+			<datelastmodified>Tue, 03 Oct 2017 10:41:19 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Mon, 02 Oct 2017 10:00:00 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[bhsc]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/css/bibliotecaHistorica.css</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/css/bibliotecaHistorica.css</destination>
+			<type>plain</type>
+			<uuidstructure>9a70a85f-5ccf-11e8-bafc-0050568213af</uuidstructure>
+			<uuidresource>9a70a860-5ccf-11e8-bafc-0050568213af</uuidresource>
+			<datelastmodified>Wed, 23 May 2018 09:53:47 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 21 May 2018 08:18:55 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[bibliotecaHistorica]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/css/fonts.css</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/css/fonts.css</destination>
+			<type>plain</type>
+			<uuidstructure>b77a051a-a2a5-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>b77a051b-a2a5-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Mon, 21 May 2018 08:19:20 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 10:30:28 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[fonts]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/css/timeline-history.css</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/css/timeline-history.css</destination>
+			<type>plain</type>
+			<uuidstructure>804f08ab-a433-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>804f08ac-a433-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 09:57:56 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 09:57:56 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[timeline-history]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/css/timeline.css</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/css/timeline.css</destination>
+			<type>plain</type>
+			<uuidstructure>19b2b487-a35c-11e7-be71-0050568213af</uuidstructure>
+			<uuidresource>19b2b488-a35c-11e7-be71-0050568213af</uuidresource>
+			<datelastmodified>Wed, 27 Sep 2017 11:27:31 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Wed, 27 Sep 2017 08:16:02 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts</destination>
+			<type>folder</type>
+			<uuidstructure>a2c52387-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<datelastmodified>Thu, 28 Sep 2017 05:48:21 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:48:21 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome</destination>
+			<type>folder</type>
+			<uuidstructure>bc323ba9-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<datelastmodified>Thu, 28 Sep 2017 05:49:04 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:49:04 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/css</destination>
+			<type>folder</type>
+			<uuidstructure>c952860f-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<datelastmodified>Thu, 28 Sep 2017 05:49:26 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:49:26 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/css/font-awesome.min.css</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/css/font-awesome.min.css</destination>
+			<type>plain</type>
+			<uuidstructure>ce88c092-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>ce88c093-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:49:34 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:49:34 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[font-awesome.min]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/fonts</destination>
+			<type>folder</type>
+			<uuidstructure>c096a73b-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<datelastmodified>Thu, 28 Sep 2017 05:49:11 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:49:11 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/fonts/fontawesome-webfont.eot</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/fonts/fontawesome-webfont.eot</destination>
+			<type>plain</type>
+			<uuidstructure>da72add6-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>da72add7-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:49:54 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:49:54 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[fontawesome-webfont]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/fonts/fontawesome-webfont.svg</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/fonts/fontawesome-webfont.svg</destination>
+			<type>plain</type>
+			<uuidstructure>e9a44c1a-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>e9a44c1b-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:50:20 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:50:20 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[fontawesome-webfont]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/fonts/fontawesome-webfont.ttf</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/fonts/fontawesome-webfont.ttf</destination>
+			<type>plain</type>
+			<uuidstructure>e07a421e-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>e07a421f-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:50:05 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:50:05 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[fontawesome-webfont]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/fonts/fontawesome-webfont.woff</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/fonts/fontawesome-webfont.woff</destination>
+			<type>plain</type>
+			<uuidstructure>dd6d774a-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>dd6d774b-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:49:59 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:49:59 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[fontawesome-webfont]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/fonts/fontawesome-webfont.woff2</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/fonts/fontawesome-webfont.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>e36c5902-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>e36c5903-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:50:10 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:50:10 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[fontawesome-webfont]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/fonts/FontAwesome.otf</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/fonts/FontAwesome.otf</destination>
+			<type>plain</type>
+			<uuidstructure>e6edb796-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>e6edb797-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:50:15 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:50:15 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[FontAwesome]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss</destination>
+			<type>folder</type>
+			<uuidstructure>c4d429dd-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<datelastmodified>Thu, 28 Sep 2017 05:49:18 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:49:18 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_animated.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_animated.scss</destination>
+			<type>plain</type>
+			<uuidstructure>f80fb41e-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>f80fb41f-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:50:44 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:50:44 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[_animated]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_bordered-pulled.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_bordered-pulled.scss</destination>
+			<type>plain</type>
+			<uuidstructure>f8262251-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>f8262252-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:50:44 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:50:44 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[_bordered-pulled]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_core.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_core.scss</destination>
+			<type>plain</type>
+			<uuidstructure>f833ddf4-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>f833ddf5-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:50:44 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:50:44 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[_core]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_fixed-width.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_fixed-width.scss</destination>
+			<type>plain</type>
+			<uuidstructure>f841e7b7-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>f841e7b8-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:50:44 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:50:44 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[_fixed-width]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_icons.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_icons.scss</destination>
+			<type>plain</type>
+			<uuidstructure>f850b4ca-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>f850b4cb-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:50:45 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:50:45 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[_icons]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_larger.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_larger.scss</destination>
+			<type>plain</type>
+			<uuidstructure>f85f81dd-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>f85f81de-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:50:45 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:50:45 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[_larger]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_list.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_list.scss</destination>
+			<type>plain</type>
+			<uuidstructure>f86dd9c0-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>f86dd9c1-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:50:45 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:50:45 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[_list]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_mixins.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_mixins.scss</destination>
+			<type>plain</type>
+			<uuidstructure>f87c0a93-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>f87c0a94-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:50:45 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:50:45 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[_mixins]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_path.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_path.scss</destination>
+			<type>plain</type>
+			<uuidstructure>f88d96c6-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>f88d96c7-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:50:45 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:50:45 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[_path]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_rotated-flipped.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_rotated-flipped.scss</destination>
+			<type>plain</type>
+			<uuidstructure>f89c63d9-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>f89c63da-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:50:45 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:50:45 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[_rotated-flipped]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_screen-reader.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_screen-reader.scss</destination>
+			<type>plain</type>
+			<uuidstructure>f8aa468c-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>f8aa468d-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:50:45 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:50:45 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[_screen-reader]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_stacked.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_stacked.scss</destination>
+			<type>plain</type>
+			<uuidstructure>f8b5df4f-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>f8b5df50-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:50:45 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:50:45 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[_stacked]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_variables.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/_variables.scss</destination>
+			<type>plain</type>
+			<uuidstructure>f8c41022-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>f8c41023-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:50:45 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:50:45 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[_variables]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/font-awesome.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/fonts/fontawesome/scss/font-awesome.scss</destination>
+			<type>plain</type>
+			<uuidstructure>f8d12f85-a410-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>f8d12f86-a410-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 05:50:45 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 05:50:45 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[font-awesome]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/img</destination>
+			<type>folder</type>
+			<uuidstructure>cd0e5382-a29e-11e7-ab7c-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 09:40:58 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 09:40:58 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/img/cd-arrow.svg</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/img/cd-arrow.svg</destination>
+			<type>plain</type>
+			<uuidstructure>276351fd-a379-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>276351fe-a379-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Wed, 27 Sep 2017 11:44:00 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Wed, 27 Sep 2017 11:44:00 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[cd-arrow]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/img/logo_biblioteca.png</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/img/logo_biblioteca.png</destination>
+			<type>image</type>
+			<uuidstructure>f860f797-5ccf-11e8-bafc-0050568213af</uuidstructure>
+			<uuidresource>f860f798-5ccf-11e8-bafc-0050568213af</uuidresource>
+			<datelastmodified>Mon, 21 May 2018 08:21:33 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 21 May 2018 08:21:33 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[logo_biblioteca]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:988,h:210]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/img/logo_uva_bn.png</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/img/logo_uva_bn.png</destination>
+			<type>image</type>
+			<uuidstructure>066c96ec-5cd1-11e8-bafc-0050568213af</uuidstructure>
+			<uuidresource>066c96ed-5cd1-11e8-bafc-0050568213af</uuidresource>
+			<datelastmodified>Mon, 21 May 2018 08:29:06 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 21 May 2018 08:29:06 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[logo_uva_bn]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:88,h:89]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/img/secundariaAzul.jpg</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/img/secundariaAzul.jpg</destination>
+			<type>image</type>
+			<uuidstructure>917e0216-5ccf-11e8-bafc-0050568213af</uuidstructure>
+			<uuidresource>917e0217-5ccf-11e8-bafc-0050568213af</uuidresource>
+			<datelastmodified>Mon, 21 May 2018 08:18:40 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 21 May 2018 08:18:40 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[secundariaAzul]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:273,h:273]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/img/secundariaNegro.jpg</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/img/secundariaNegro.jpg</destination>
+			<type>image</type>
+			<uuidstructure>5eb5b841-5cdf-11e8-bafc-0050568213af</uuidstructure>
+			<uuidresource>5eb5b842-5cdf-11e8-bafc-0050568213af</uuidresource>
+			<datelastmodified>Mon, 21 May 2018 10:11:47 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 21 May 2018 10:11:47 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[secundariaNegro]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:107,h:108]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/img/universidaddevalladolid.png</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/img/universidaddevalladolid.png</destination>
+			<type>image</type>
+			<uuidstructure>9190c6ca-5ccf-11e8-bafc-0050568213af</uuidstructure>
+			<uuidresource>9190c6cb-5ccf-11e8-bafc-0050568213af</uuidresource>
+			<datelastmodified>Mon, 21 May 2018 08:18:40 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 21 May 2018 08:18:40 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[universidaddevalladolid]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:486,h:40]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/img/webbiblioteca_fondo.png</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/img/webbiblioteca_fondo.png</destination>
+			<type>image</type>
+			<uuidstructure>23278524-5cd2-11e8-bafc-0050568213af</uuidstructure>
+			<uuidresource>23278525-5cd2-11e8-bafc-0050568213af</uuidresource>
+			<datelastmodified>Mon, 21 May 2018 08:37:03 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 21 May 2018 08:37:03 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[webadmision_fondo]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:8,h:8]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/js</destination>
+			<type>folder</type>
+			<uuidstructure>d66ba278-a29e-11e7-ab7c-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 09:41:14 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 09:41:14 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/js/bhsc.js</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/js/bhsc.js</destination>
+			<type>plain</type>
+			<uuidstructure>65274d39-a2a4-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>65274d3a-a2a4-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Tue, 03 Oct 2017 07:09:41 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 10:21:01 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[JS conjunto]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[JS conjunto BSCH]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/js/bibliotecaHistorica.js</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/js/bibliotecaHistorica.js</destination>
+			<type>plain</type>
+			<uuidstructure>fa25f940-5d8b-11e8-bafc-0050568213af</uuidstructure>
+			<uuidresource>fa25f941-5d8b-11e8-bafc-0050568213af</uuidresource>
+			<datelastmodified>Tue, 22 May 2018 07:20:08 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Tue, 22 May 2018 06:47:21 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/js/jquery.mobile.custom.min.js</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/js/jquery.mobile.custom.min.js</destination>
+			<type>plain</type>
+			<uuidstructure>363efe4f-a36d-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>363efe50-a36d-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Wed, 27 Sep 2017 10:18:31 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Wed, 27 Sep 2017 10:18:31 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[jquery.mobile.custom.min]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/js/timeline-history.js</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/js/timeline-history.js</destination>
+			<type>plain</type>
+			<uuidstructure>805d608e-a433-11e7-9ad2-0050568213af</uuidstructure>
+			<uuidresource>805d608f-a433-11e7-9ad2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 09:57:56 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 09:57:56 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[timeline-history]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/js/timeline.js</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/js/timeline.js</destination>
+			<type>plain</type>
+			<uuidstructure>ff129aa5-a35b-11e7-be71-0050568213af</uuidstructure>
+			<uuidresource>ff129aa6-a35b-11e7-be71-0050568213af</uuidresource>
+			<datelastmodified>Wed, 27 Sep 2017 08:15:22 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 27 Sep 2017 08:15:17 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/scss</destination>
+			<type>folder</type>
+			<uuidstructure>d3778fc6-a29e-11e7-ab7c-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 09:41:09 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 09:41:09 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/scss/base.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/scss/base.scss</destination>
+			<type>plain</type>
+			<uuidstructure>825f9888-a74e-11e7-9b4d-0050568213af</uuidstructure>
+			<uuidresource>825f9889-a74e-11e7-9b4d-0050568213af</uuidresource>
+			<datelastmodified>Tue, 03 Oct 2017 10:41:49 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Mon, 02 Oct 2017 08:48:49 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[base]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/scss/bhsc.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/scss/bhsc.scss</destination>
+			<type>plain</type>
+			<uuidstructure>75fd6153-a827-11e7-9b4d-0050568213af</uuidstructure>
+			<uuidresource>75fd6154-a827-11e7-9b4d-0050568213af</uuidresource>
+			<datelastmodified>Tue, 03 Oct 2017 10:41:49 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Tue, 03 Oct 2017 10:41:49 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[bhsc]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/scss/colores.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/scss/colores.scss</destination>
+			<type>plain</type>
+			<uuidstructure>8277182b-a74e-11e7-9b4d-0050568213af</uuidstructure>
+			<uuidresource>8277182c-a74e-11e7-9b4d-0050568213af</uuidresource>
+			<datelastmodified>Tue, 03 Oct 2017 10:41:49 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Mon, 02 Oct 2017 08:48:49 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[colores]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/scss/fonts.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/scss/fonts.scss</destination>
+			<type>plain</type>
+			<uuidstructure>8284fade-a74e-11e7-9b4d-0050568213af</uuidstructure>
+			<uuidresource>8284fadf-a74e-11e7-9b4d-0050568213af</uuidresource>
+			<datelastmodified>Tue, 03 Oct 2017 10:41:49 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Mon, 02 Oct 2017 08:48:49 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[fonts]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/scss/footer.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/scss/footer.scss</destination>
+			<type>plain</type>
+			<uuidstructure>82906c91-a74e-11e7-9b4d-0050568213af</uuidstructure>
+			<uuidresource>82906c92-a74e-11e7-9b4d-0050568213af</uuidresource>
+			<datelastmodified>Tue, 03 Oct 2017 10:41:49 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Mon, 02 Oct 2017 08:48:49 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[footer]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/scss/header.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/scss/header.scss</destination>
+			<type>plain</type>
+			<uuidstructure>829b9024-a74e-11e7-9b4d-0050568213af</uuidstructure>
+			<uuidresource>829b9025-a74e-11e7-9b4d-0050568213af</uuidresource>
+			<datelastmodified>Tue, 03 Oct 2017 10:41:49 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Mon, 02 Oct 2017 08:48:49 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[header]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/scss/migas.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/scss/migas.scss</destination>
+			<type>plain</type>
+			<uuidstructure>641f97ee-a80e-11e7-9b4d-0050568213af</uuidstructure>
+			<uuidresource>641f97ef-a80e-11e7-9b4d-0050568213af</uuidresource>
+			<datelastmodified>Tue, 03 Oct 2017 10:41:49 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Tue, 03 Oct 2017 07:42:22 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[migas]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/resources/bhsc/scss/style.scss</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/resources/bhsc/scss/style.scss</destination>
+			<type>plain</type>
+			<uuidstructure>82a7c527-a74e-11e7-9b4d-0050568213af</uuidstructure>
+			<uuidresource>82a7c528-a74e-11e7-9b4d-0050568213af</uuidresource>
+			<datelastmodified>Tue, 03 Oct 2017 10:41:49 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Mon, 02 Oct 2017 08:48:49 GMT</datecreated>
+			<usercreated>nulle09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[style]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/schemas</destination>
+			<type>folder</type>
+			<uuidstructure>73abf619-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 07:29:37 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:29:37 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/schemas/ab-box-standard.xsd</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/schemas/ab-box-standard.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>888889ab-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>888889ac-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 08:33:51 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:30:12 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample resource type schema]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/schemas/ab-flexible.xsd</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/schemas/ab-flexible.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>e2df37a1-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>e2df37a2-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 08:23:17 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:32:44 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample resource type schema]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/schemas/ab-imagen.xsd</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/schemas/ab-imagen.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>1f5f30b9-a28d-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>1f5f30ba-a28d-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 07:38:06 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:34:25 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample resource type schema]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/schemas/ab-mapa.xsd</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/schemas/ab-mapa.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>1e8709fb-a2a1-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>1e8709fc-a2a1-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 10:00:38 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 09:57:34 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample resource type schema]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/schemas/ab-navigation.xsd</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/schemas/ab-navigation.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>cb3bbbd5-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>cb3bbbd6-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 08:24:54 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:32:04 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample resource type schema]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/schemas/ab-parrafo.xsd</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/schemas/ab-parrafo.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>f420a31d-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>f420a31e-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 07:38:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:33:13 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample resource type schema]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/schemas/ab-timeline.xsd</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/schemas/ab-timeline.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>3025d6c2-a2a1-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>3025d6c3-a2a1-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Wed, 27 Sep 2017 08:38:10 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 09:58:03 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample resource type schema]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/schemas/nested</destination>
+			<type>folder</type>
+			<uuidstructure>be24a333-a28d-11e7-8c4a-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 07:38:52 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:38:52 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/schemas/nested/ab-image.xsd</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/schemas/nested/ab-image.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>cba44ba8-a28d-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>cba44ba9-a28d-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 07:39:48 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:39:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/schemas/nested/ab-imagenitem.xsd</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/schemas/nested/ab-imagenitem.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>d173dffa-a28d-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>d173dffb-a28d-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 07:39:54 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:39:24 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/schemas/nested/ab-link.xsd</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/schemas/nested/ab-link.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>d67f39ec-a28d-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>d67f39ed-a28d-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 07:40:02 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:39:33 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/schemas/nested/ab-map-coord.xsd</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/schemas/nested/ab-map-coord.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>97e68244-a2a1-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>97e68245-a2a1-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 10:01:26 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 10:00:58 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/schemas/nested/ab-paragraph.xsd</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/schemas/nested/ab-paragraph.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>db800c8e-a28d-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>db800c8f-a28d-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Tue, 26 Sep 2017 07:40:10 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:39:41 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/schemas/nested/ab-timeline-element.xsd</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/schemas/nested/ab-timeline-element.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>7df2d8d7-a2a5-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>7df2d8d8-a2a5-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Wed, 27 Sep 2017 09:02:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 10:28:52 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/templates</destination>
+			<type>folder</type>
+			<uuidstructure>739057c3-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 07:29:37 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:29:37 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.ambassador/templates/bhsc</destination>
+			<type>folder</type>
+			<uuidstructure>20089ae5-a28e-11e7-8c4a-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 26 Sep 2017 07:41:36 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:41:36 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/templates/bhsc/frontpage.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/templates/bhsc/frontpage.jsp</destination>
+			<type>containerpage_template</type>
+			<uuidstructure>6ba90f8d-5cce-11e8-bafc-0050568213af</uuidstructure>
+			<uuidresource>6ba90f8e-5cce-11e8-bafc-0050568213af</uuidresource>
+			<datelastmodified>Fri, 01 Jun 2018 07:34:24 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 21 May 2018 08:10:27 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/templates/bhsc/frontpage_old.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/templates/bhsc/frontpage_old.jsp</destination>
+			<type>containerpage_template</type>
+			<uuidstructure>6fe80476-a296-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>6fe80477-a296-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Tue, 03 Oct 2017 07:43:39 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 08:41:06 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/templates/bhsc/main-copy.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/templates/bhsc/main-copy.jsp</destination>
+			<type>containerpage_template</type>
+			<uuidstructure>8c22bfc3-a43c-11e7-9b4d-0050568213af</uuidstructure>
+			<uuidresource>8c22bfc4-a43c-11e7-9b4d-0050568213af</uuidresource>
+			<datelastmodified>Thu, 28 Sep 2017 08:36:45 GMT</datelastmodified>
+			<userlastmodified>nulle09338789f</userlastmodified>
+			<datecreated>Thu, 28 Sep 2017 11:02:41 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.ambassador/templates/bhsc/main.jsp</source>
+			<destination>system/modules/es.uva.web.portal.ambassador/templates/bhsc/main.jsp</destination>
+			<type>containerpage_template</type>
+			<uuidstructure>36d05c97-a28e-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>36d05c98-a28e-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Fri, 01 Jun 2018 07:34:31 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:42:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace</destination>
+			<type>folder</type>
+			<uuidstructure>20e1275f-f75b-11e6-abfe-0050568213af</uuidstructure>
+			<datelastmodified>Mon, 20 Feb 2017 10:56:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 20 Feb 2017 10:55:44 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+				<property>
+					<name>login-form</name>
+					<value><![CDATA[/system/login/index.html]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol>
+				<accessentry>
+					<uuidprincipal>ALL_OTHERS</uuidprincipal>
+					<flags>134</flags>
+					<permissionset>
+						<allowed>0</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+				<accessentry>
+					<uuidprincipal>ROLE.WORKPLACE_USER</uuidprincipal>
+					<flags>518</flags>
+					<permissionset>
+						<allowed>5</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+			</accesscontrol>
+		</file>
+		<file>
+			<destination>system/workplace/resources</destination>
+			<type>folder</type>
+			<uuidstructure>20e8c881-f75b-11e6-abfe-0050568213af</uuidstructure>
+			<datelastmodified>Mon, 20 Feb 2017 10:55:44 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 20 Feb 2017 10:55:44 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/resources/filetypes</destination>
+			<type>folder</type>
+			<uuidstructure>20efa653-f75b-11e6-abfe-0050568213af</uuidstructure>
+			<datelastmodified>Thu, 12 Apr 2018 08:06:10 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 20 Feb 2017 10:55:44 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/ab-box-standard.png</source>
+			<destination>system/workplace/resources/filetypes/ab-box-standard.png</destination>
+			<type>image</type>
+			<uuidstructure>88a5d5ae-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>88a5fcbf-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:30:12 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/ab-box-standard_big.png</source>
+			<destination>system/workplace/resources/filetypes/ab-box-standard_big.png</destination>
+			<type>image</type>
+			<uuidstructure>88b60252-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>88b60253-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:30:13 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon_big]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/ab-flexible.png</source>
+			<destination>system/workplace/resources/filetypes/ab-flexible.png</destination>
+			<type>image</type>
+			<uuidstructure>e3092dd4-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>e3092dd5-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:32:44 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/ab-flexible_big.png</source>
+			<destination>system/workplace/resources/filetypes/ab-flexible_big.png</destination>
+			<type>image</type>
+			<uuidstructure>e318be38-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>e318be39-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:32:44 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon_big]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/ab-imagen.png</source>
+			<destination>system/workplace/resources/filetypes/ab-imagen.png</destination>
+			<type>image</type>
+			<uuidstructure>1f79968c-a28d-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>1f79968d-a28d-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:34:26 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/ab-imagen_big.png</source>
+			<destination>system/workplace/resources/filetypes/ab-imagen_big.png</destination>
+			<type>image</type>
+			<uuidstructure>1f87ee70-a28d-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>1f87ee71-a28d-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:34:26 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon_big]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/ab-mapa.png</source>
+			<destination>system/workplace/resources/filetypes/ab-mapa.png</destination>
+			<type>image</type>
+			<uuidstructure>1e9d782e-a2a1-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>1e9d782f-a2a1-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 09:57:34 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/ab-mapa_big.png</source>
+			<destination>system/workplace/resources/filetypes/ab-mapa_big.png</destination>
+			<type>image</type>
+			<uuidstructure>1eab0cc2-a2a1-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>1eab0cc3-a2a1-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 09:57:34 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon_big]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/ab-navigation.png</source>
+			<destination>system/workplace/resources/filetypes/ab-navigation.png</destination>
+			<type>image</type>
+			<uuidstructure>cb536288-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>cb536289-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:32:04 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/ab-navigation_big.png</source>
+			<destination>system/workplace/resources/filetypes/ab-navigation_big.png</destination>
+			<type>image</type>
+			<uuidstructure>cb6081ec-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>cb6081ed-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:32:04 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon_big]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/ab-parrafo.png</source>
+			<destination>system/workplace/resources/filetypes/ab-parrafo.png</destination>
+			<type>image</type>
+			<uuidstructure>f43c4170-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>f43c4171-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:33:13 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/ab-parrafo_big.png</source>
+			<destination>system/workplace/resources/filetypes/ab-parrafo_big.png</destination>
+			<type>image</type>
+			<uuidstructure>f44c1ff4-a28c-11e7-8c4a-0050568213af</uuidstructure>
+			<uuidresource>f44c1ff5-a28c-11e7-8c4a-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 07:33:13 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon_big]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/ab-timeline.png</source>
+			<destination>system/workplace/resources/filetypes/ab-timeline.png</destination>
+			<type>image</type>
+			<uuidstructure>304322c5-a2a1-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>304322c6-a2a1-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 09:58:04 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/ab-timeline_big.png</source>
+			<destination>system/workplace/resources/filetypes/ab-timeline_big.png</destination>
+			<type>image</type>
+			<uuidstructure>30559959-a2a1-11e7-ab7c-0050568213af</uuidstructure>
+			<uuidresource>3055995a-a2a1-11e7-ab7c-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 26 Sep 2017 09:58:04 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon_big]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+	</files>
+</export>

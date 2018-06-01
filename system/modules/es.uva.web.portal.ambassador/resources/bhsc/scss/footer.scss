@@ -1,0 +1,55 @@
+@import "colores";
+@import "fonts";
+
+.footer {
+  h1 {
+    color: $azul_claro;
+    margin-bottom: $enano;
+    padding: 0;
+    font-size: 2.7em;
+    &.lema:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    &.lema {
+      margin-bottom: 0;
+      margin-top: 2em;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 2.2em;
+      color: $azul_uva_oficial;
+    }
+    &.sublema {
+      margin: 0;
+      color: $rojo_uva_oficial;
+    }
+  }
+  h2 {
+    color: $rojo_uva_oficial;
+    font: 28px Arial;
+  }
+  h3 {
+    color: $rojo_uva_oficial;
+    font: bold 3em Arial;
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.aviso_legal {
+  h2 {
+    color: white;
+    font: bold 1.2em Arial;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  p {
+    color: white;
+    font-size: 0.8em;
+  }
+}

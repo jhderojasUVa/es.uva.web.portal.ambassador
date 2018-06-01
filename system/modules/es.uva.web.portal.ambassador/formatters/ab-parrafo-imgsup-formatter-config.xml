@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Párrafos con la imagen superior]]></NiceName>
+    <Type><![CDATA[ab-parrafo]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/es.uva.web.portal.ambassador/formatters/ab-parrafo-imgsup-formatter.jsp]]></target>
+        <uuid>cc199943-a2a6-11e7-ab7c-0050568213af</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[1000]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[contenedor]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>true</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>true</Detail>
+    <NestedContainers>false</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[hideTitle]]></PropertyName>
+      <DisplayName><![CDATA[Esconder titulo]]></DisplayName>
+      <Description><![CDATA[Muestra o esconde el titular principal del grupo de parrafos]]></Description>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>

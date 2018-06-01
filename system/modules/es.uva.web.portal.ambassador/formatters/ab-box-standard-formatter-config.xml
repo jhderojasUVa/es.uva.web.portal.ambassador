@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Sample formatter for AB-Box-Standard]]></NiceName>
+    <Type><![CDATA[ab-box-standard]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/es.uva.web.portal.ambassador/formatters/ab-box-standard-formatter.jsp]]></target>
+        <uuid>88efaffb-a28c-11e7-8c4a-0050568213af</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[1000]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[content]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>true</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>true</Detail>
+    <NestedContainers>false</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[hideTitle]]></PropertyName>
+      <DisplayName><![CDATA[Ocultar íTtulo]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[style]]></PropertyName>
+      <DisplayName><![CDATA[Estilo]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[1]]></Default>
+      <WidgetConfig><![CDATA[1:normal|2:fluido]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[orientation]]></PropertyName>
+      <DisplayName><![CDATA[Orientación]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[1]]></Default>
+      <WidgetConfig><![CDATA[1:vertical|2:horizontal]]></WidgetConfig>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>
